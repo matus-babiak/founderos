@@ -253,6 +253,9 @@ main { min-width: 0; padding: 2.5rem 2.75rem 6rem; }
 .type-card.yes .lbl { color: var(--accent-ink); }
 .type-card q { font-family: var(--font-display); font-style: italic; font-size: 1rem; line-height: 1.42; quotes: none; }
 .type-card .note { font-size: 0.84rem; color: var(--ink-soft); }
+.type-card ul { margin-top: 0.15rem; display: flex; flex-direction: column; gap: 0.22rem; }
+.type-card ul li { font-size: 0.83rem; color: var(--ink-soft); position: relative; padding-left: 0.85rem; }
+.type-card ul li::before { content: "•"; position: absolute; left: 0; color: var(--ink-faint); }
 
 /* ---------- pred/po ---------- */
 .problem-quote { padding: 1.1rem 1.3rem; background: var(--paper-sunk); border-left: 3px solid var(--line-strong); border-radius: 4px; margin-bottom: 1.75rem; }
