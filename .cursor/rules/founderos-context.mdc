@@ -11,6 +11,8 @@ Founder OS je osobný pracovný prehľad Matúša Babiaka, freelancera na online
 
 Repozitár: `matus-babiak/founderos`, branch `main`. Statický web, žiadny build proces.
 
+**Live URL:** https://founderos-mb.vercel.app (Vercel, deploy zo `main`). Po pushi na `main` je obsah hneď naživo.
+
 ## Súborová štruktúra
 
 - `index.html` celý obsah, jedna stránka
@@ -70,7 +72,7 @@ Prepínač témy (`localStorage` `founderos-theme`, anti-flash skript v `<head>`
 
 **Pevné pravidlo:** každá hotová zmena sa commitne a pushne priamo na `main` (`matus-babiak/founderos`). Žiadne feature branche, žiadne PR, žiadne drafty.
 
-Dôvod: stránka beží zo `main` (GitHub Pages alebo rovnaký live zdroj). Matúš chce zmeny vidieť hneď naživo, nie čakať na merge.
+Dôvod: stránka beží zo `main` na https://founderos-mb.vercel.app. Matúš chce zmeny vidieť hneď naživo, nie čakať na merge.
 
 Postup po obsahovej alebo UX zmene:
 1. Over obsah a že nepribudla pomlčka.
