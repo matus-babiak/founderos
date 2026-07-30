@@ -31,14 +31,14 @@ Celý obsah po slovensky, osobný priamy hlas (Matúšove vlastné rozhodnutia, 
 
 5 pilierov Business OS plus jedna prierezová sekcia:
 
-1. Filozofia a identita (95 %, hotovo)
-2. Metodika (80 %, rozpracované): Matúšov framework V1, 5 fáz: Pochopenie, Návrh systému, Vybudovanie základov, Učenie a zlepšovanie, Rastové partnerstvo
-3. Produkt (10 %, nezačaté, zámerne pozastavené kým nie je hotová metodika)
+1. Filozofia a identita (95 %, hotovo): digitálny partner, hodnota (systém, orientácia, istota), stavy klienta A/B/C, konkurenčná výhoda
+2. Metodika (85 %, rozpracované): Matúšov framework V1, 5 fáz (Pochopenie, Návrh systému, Vybudovanie základov, Učenie a zlepšovanie, Rastové partnerstvo), rozhodovací strom, mentálne pasce, garancie
+3. Produkt (45 %, rozpracované): pracovný názov Základ online systému, 3 piliere online systému, cenová logika (setup cca 1300 €, mesačne od 120 €), chýbajú presné balíky
 4. Predaj (0 %, nezačaté)
-5. Doručenie (0 %, nezačaté)
-6. Mapa rastu a zlepšenia: 9 zručnostných oblastí + Top 5 priorít na 6 mesiacov
+5. Doručenie (5 %, náčrt): systém práce 7 krokov je zadefinovaný ako cieľ, šablóny a SOP chýbajú
+6. Mapa rastu a zlepšenia: silné stránky, 5 medzier, 9 zručnostných oblastí + Top 5 priorít na 6 mesiacov
 
-Na začiatku je sekcia Prehľad: roadmap 4 fáz budovania, dashboard s percentami, Pravidlo projektu (3 otázky, ktoré musí zodpovedať každý nový dokument: Prečo existuje? Na čom stojí? Čo z nej vyplýva?). Každý pilier má status pill v hlavičke a sekciu „Čo chýba“ ako interaktívny checklist.
+Na začiatku je sekcia Prehľad: roadmap 4 fáz budovania, dashboard s percentami, Snapshot V1.0 (kde som dnes), Pravidlo projektu (3 otázky, ktoré musí zodpovedať každý nový dokument: Prečo existuje? Na čom stojí? Čo z nej vyplýva?). Každý pilier má status pill v hlavičke a sekciu „Čo chýba“ ako interaktívny checklist.
 
 ## Dizajnový systém (`css/style.css`)
 
