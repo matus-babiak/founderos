@@ -1,0 +1,81 @@
+---
+description: Founder OS projektový kontext, obsah, dizajn a workflow
+alwaysApply: true
+---
+
+# Founder OS: kontext projektu
+
+## Čo to je
+
+Founder OS je osobný pracovný prehľad Matúša Babiaka, freelancera na online marketing (PPC, weby, email marketing, copywriting), ktorý si postupne buduje vlastnú konzultantskú metodiku a produkt. Stránka vizualizuje jeho Business OS: stratégiu, metodiku a osobný rast, priebežne budovanú z konverzácií s GPT o produktovej stratégii. Nie je to prezentačný web ani produkt pre klientov, je to Matúšova osobná mapa rozhodnutí.
+
+Repozitár: `matus-babiak/founderos`, branch `main`. Statický web, žiadny build proces.
+
+## Súborová štruktúra
+
+- `index.html` celý obsah, jedna stránka
+- `css/style.css` dizajnové tokeny a všetky štýly
+- `js/script.js` všetka interaktivita (vanilla JS, žiadny framework)
+
+Nikdy nezavádzaj build nástroje, bundler, npm balíčky ani frameworky. Zostáva to čistý HTML, CSS a JS bez závislostí.
+
+## NAJDÔLEŽITEJŠIE PRAVIDLO: žiadne pomlčky
+
+V celej aplikácii sa nikdy nepoužívajú pomlčky ako interpunkcia (— ani –), nikde v texte. Namiesto nich dvojbodka, čiarka, zátvorka, spojka „a“/„alebo“, alebo nová veta. Toto pravidlo je zapísané aj ako komentár na začiatku `<body>` v `index.html`. Spojovníky v zložených slovách (e-mail, 12-týždňová) sú v poriadku. Obsah často vzniká prepisovaním GPT konverzácií, ktoré pomlčky nadužívajú: vždy ich pri prepise odstráň.
+
+## Jazyk a tón
+
+Celý obsah po slovensky, osobný priamy hlas (Matúšove vlastné rozhodnutia, nie marketingový copy). Žiadne emoji ako značky sekcií (jediná výnimka je favicon 📐). Stav a priorita sa vyjadrujú cez `.status-pill`, nie farebnými emoji kolieskami.
+
+## Obsahová architektúra
+
+5 pilierov Business OS plus jedna prierezová sekcia:
+
+1. Filozofia a identita (95 %, hotovo)
+2. Metodika (80 %, rozpracované): Matúšov framework V1, 5 fáz: Pochopenie, Návrh systému, Vybudovanie základov, Učenie a zlepšovanie, Rastové partnerstvo
+3. Produkt (10 %, nezačaté, zámerne pozastavené kým nie je hotová metodika)
+4. Predaj (0 %, nezačaté)
+5. Doručenie (0 %, nezačaté)
+6. Mapa rastu a zlepšenia: 9 zručnostných oblastí + Top 5 priorít na 6 mesiacov
+
+Na začiatku je sekcia Prehľad: roadmap 4 fáz budovania, dashboard s percentami, Pravidlo projektu (3 otázky, ktoré musí zodpovedať každý nový dokument: Prečo existuje? Na čom stojí? Čo z nej vyplýva?). Každý pilier má status pill v hlavičke a sekciu „Čo chýba“ ako interaktívny checklist.
+
+## Dizajnový systém (`css/style.css`)
+
+CSS custom properties v `:root`, prepínanie tém cez `@media (prefers-color-scheme)` aj `:root[data-theme]`.
+
+Tokeny: `--ink`/`--ink-soft`/`--ink-faint` (text), `--paper`/`--paper-raised`/`--paper-sunk` (pozadia), `--line`/`--line-strong` (okraje), `--accent`/`--accent-ink`/`--accent-soft` (jantárová, hlavný akcent), `--sage` (zelená, hotovo), `--warn` (hrdzavá, nezačaté), `--grid-dot` (bodkovaný vzor pozadia).
+
+Typografia: `--font-display` (serif nadpisy), `--font-body` (systémový sans), `--font-mono` (mono štítky/pilulky).
+
+Estetika strategický dokument/blueprint, nie startupové SaaS UI. Žiadne gradienty ani emoji ikony.
+
+## Znovupoužiteľné komponenty
+
+Nevymýšľaj nové vzory, ak existujúci sedí:
+
+`.criteria-grid`/` .criterion`, `.timeline`/` .tl-item`/` .tl-card`, `.type-compare` (`.type-card.no`/` .yes`), `.quad-grid`/` .quad`, `.open-list`/` .open-item`, `.status-pill.done`/` .wip`/` .stalled`/` .open`, `.insight-quote`, `.rule-box`, `.boundary-box`, `.dash-grid`/` .dash-card`, `.skill-grid`/` .skill-card`, `.subhead`.
+
+`.criteria-grid` aj `.dash-grid` používajú Flexbox (`flex-wrap` + `flex: 1 1 <šírka>`), nie CSS Grid `auto-fit`, lebo `auto-fit` necháva pri nepárnom počte položiek prázdnu bunku v poslednom riadku. Pri nových mriežkach s premenlivým počtom položiek použi rovnaký flexbox vzor.
+
+## Layout a šírka
+
+`.page` je grid s pevným bočným panelom (`--rail-w`: 248px, na ≥1600px 300px) a plynulým hlavným stĺpcom, `max-width` 1920px, nemá byť pevne orezaný na úzku hodnotu. Sekcie (`.sec`) majú vlastný `max-width` (820px/1180px) kvôli čitateľnosti textu, ale vonkajší layout sa vždy prispôsobuje šírke okna.
+
+## Interaktivita (`js/script.js`)
+
+Prepínač témy (`localStorage` `founderos-theme`, anti-flash skript v `<head>`), responzivita (`.rail` na desktope ≥920px, pod tým `.mobile-bar` + `.drawer`), scroll progress bar, tlačidlo späť hore, reveal on scroll cez `IntersectionObserver` (`.reveal`/` .revealed`, gatované cez `.reveal-ready`), animovaný dashboard (progress bary a percentá od nuly), checklisty s `localStorage` perzistenciou (`strategia-open-questions-v1`) a živými počítadlami „x / y vyriešené“. Všetko rešpektuje `prefers-reduced-motion`.
+
+## Ako pokračovať v obsahovej práci
+
+Matúš pravidelne prilepí úryvok konverzácie s GPT. Postup:
+
+1. Zisti, čo je nové/zmenené oproti aktuálnemu obsahu `index.html`.
+2. Zapracuj to existujúcimi komponentmi, nevymýšľaj nový vizuálny jazyk.
+3. Aktualizuj percentá/pilulky len ak sa reálne zmenil stav.
+4. Vyriešené položky z checklistov nahraď reálnym obsahom, nemaž ich mechanicky.
+5. Neduplikuj obsah, over si najprv aktuálny stav súboru.
+6. Skontroluj, že nepribudla pomlčka.
+7. Over vizuálne a commitni/pushni do `matus-babiak/founderos` na `main`, keď o to Matúš požiada.
+
+Očakávaj iteratívne konverzačné požiadavky (premenovania, reštruktúry, nové sekcie, UX opravy) a odpovedaj rovnakým duchom: postupné, odôvodnené zmeny rešpektujúce existujúci systém.
