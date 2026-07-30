@@ -66,6 +66,18 @@ Nevymýšľaj nové vzory, ak existujúci sedí:
 
 Prepínač témy (`localStorage` `founderos-theme`, anti-flash skript v `<head>`), responzivita (`.rail` na desktope ≥920px, pod tým `.mobile-bar` + `.drawer`), scroll progress bar, tlačidlo späť hore, reveal on scroll cez `IntersectionObserver` (`.reveal`/` .revealed`, gatované cez `.reveal-ready`), animovaný dashboard (progress bary a percentá od nuly), checklisty s `localStorage` perzistenciou (`strategia-open-questions-v1`) a živými počítadlami „x / y vyriešené“. Všetko rešpektuje `prefers-reduced-motion`.
 
+## Git a nasadenie: vždy priamo na `main`
+
+**Pevné pravidlo:** každá hotová zmena sa commitne a pushne priamo na `main` (`matus-babiak/founderos`). Žiadne feature branche, žiadne PR, žiadne drafty.
+
+Dôvod: stránka beží zo `main` (GitHub Pages alebo rovnaký live zdroj). Matúš chce zmeny vidieť hneď naživo, nie čakať na merge.
+
+Postup po obsahovej alebo UX zmene:
+1. Over obsah a že nepribudla pomlčka.
+2. `git checkout main` (alebo zostaň na `main`).
+3. `git add` → `git commit` → `git push origin main`.
+4. Ak cloud agent omylom vytvoril feature branch, zmerguj ho do `main` a pushni `main`. Feature branch potom môžeš zmazať.
+
 ## Ako pokračovať v obsahovej práci
 
 Matúš pravidelne prilepí úryvok konverzácie s GPT. Postup:
@@ -76,6 +88,6 @@ Matúš pravidelne prilepí úryvok konverzácie s GPT. Postup:
 4. Vyriešené položky z checklistov nahraď reálnym obsahom, nemaž ich mechanicky.
 5. Neduplikuj obsah, over si najprv aktuálny stav súboru.
 6. Skontroluj, že nepribudla pomlčka.
-7. Over vizuálne a commitni/pushni do `matus-babiak/founderos` na `main`, keď o to Matúš požiada.
+7. Commitni a pushni priamo na `main`, aby to bolo hneď live.
 
 Očakávaj iteratívne konverzačné požiadavky (premenovania, reštruktúry, nové sekcie, UX opravy) a odpovedaj rovnakým duchom: postupné, odôvodnené zmeny rešpektujúce existujúci systém.
