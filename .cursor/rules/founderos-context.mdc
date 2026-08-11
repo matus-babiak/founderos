@@ -93,3 +93,9 @@ Matúš pravidelne prilepí úryvok konverzácie s GPT. Postup:
 7. Commitni a pushni priamo na `main`, aby to bolo hneď live.
 
 Očakávaj iteratívne konverzačné požiadavky (premenovania, reštruktúry, nové sekcie, UX opravy) a odpovedaj rovnakým duchom: postupné, odôvodnené zmeny rešpektujúce existujúci systém.
+
+## AI development workflow
+
+Plánovanie a implementácia sú oddelené. Zdroj pravdy pre agentov: `docs/ai/README.md`.
+Príkazy: `/founderos-plan` (iba návrh, nemeň aplikáciu) a `/founderos-implement` (až po schválení).
+Doplnkové pravidlá: `.cursor/rules/founderos-ai-dev.mdc`.

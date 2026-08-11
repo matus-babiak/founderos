@@ -1,0 +1,50 @@
+---
+description: Founder OS AI development: plánovanie oddelené od implementácie, Knowledge Base, harness
+alwaysApply: true
+---
+
+# Founder OS: AI development pravidlá
+
+Tieto pravidlá dopĺňajú `founderos-context.mdc`. Pri vývoji cez AI najprv čítaj `docs/ai/README.md`.
+
+## Oddelenie plánovania a implementácie
+
+- `/founderos-plan`: iba analýza a návrh. **Nemeň** `index.html`, `css/style.css`, `js/script.js`.
+- `/founderos-implement`: až so schváleným implementačným promptom.
+- Bez schválenia neimplementuj významné zmeny „naprieč“.
+
+## Povinný postup pred zmenou aplikácie
+
+1. Pochop požiadavku.
+2. Skontroluj `docs/ai/product.md`.
+3. Skontroluj relevantnú dokumentáciu v `docs/ai/`.
+4. Skontroluj aktuálny kód (nie pamäť).
+5. Identifikuj dotknuté časti.
+6. Skontroluj existujúce patterns (`ui-ux.md`).
+7. Skontroluj `business-rules.md` a harness.
+8. Identifikuj riziká.
+9. Pri nejasnostiach sa opýtaj.
+10. Preferuj najmenšiu správnu zmenu.
+11. Pri významných zmenách definuj overenie.
+12. Po systémovej zmene aktualizuj `docs/ai/`.
+
+## Komunikácia s človekom
+
+Planning vysvetľuje ľudskou rečou. Technické detaily dávaj do implementačného promptu, nie do hlavného návrhu.
+
+## Zákazy
+
+- Nevymýšľaj existujúci stav kódu.
+- Netvrď nič o kóde bez overenia.
+- Neooprávňuj si veľký refaktor, ak stačí existujúci pattern.
+- Nezavádzaj npm, bundler, framework.
+- Nemeň `localStorage` kľúče bez súhlasu.
+- Neporušuj pravidlo pomlčiek v texte aplikácie.
+- Feature branch / PR len ak používateľ výslovne zruší projektové pravidlo main-only; default je push na `main`.
+
+## Hierarchia pravdy
+
+1. Aktuálny kód
+2. `.cursor/rules/founderos-context.mdc`
+3. `docs/ai/`
+4. Konflikty zaznamenaj, neprepíš potichu
