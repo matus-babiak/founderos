@@ -34,7 +34,7 @@ rg -n '[—–]' index.html css/style.css js/script.js && echo 'FAIL: pomlčka n
 rg -n "founderos-theme|strategia-open-questions-v1" index.html js/script.js
 
 # Základná štruktúra sekcií
-rg -n 'id="sec-prehlad"|id="sec-p1"|id="sec-p2"|id="sec-p3"|id="sec-p4"|id="sec-p5"|id="sec-mapa"' index.html
+rg -n 'id="sec-prehlad"|id="sec-kto"|id="sec-filozofia"|id="sec-hodnota"|id="sec-komu"|id="sec-problem"|id="sec-kupuje"|id="sec-produkt"|id="sec-dodavam"|id="sec-dostane"|id="sec-garancie"|id="sec-dnes"|id="sec-dalej"' index.html
 ```
 
 Ak požiadavka mení UI správanie: otvor lokálne `python3 -m http.server 4173` a prejdi scenár z implementačného promptu.

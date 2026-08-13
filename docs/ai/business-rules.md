@@ -107,4 +107,4 @@ Odkaz na zdrojovú konverzáciu je v rail, drawer aj mastheade. Pri zmene URL up
 
 ### B19. Verzia snapshotu
 
-Masthead meta a Snapshot V1.0 sú súčasť obsahovej pravdy. Pri veľkom obsahovom posune sa opýtaj, či aktualizovať dátum / verziu snapshotu.
+Masthead meta a Mapa podnikania V1.1 sú súčasť obsahovej pravdy. Pri veľkom obsahovom posune sa opýtaj, či aktualizovať dátum / verziu snapshotu.

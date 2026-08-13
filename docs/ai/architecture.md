@@ -57,8 +57,9 @@ Business logika tejto aplikácie nie je serverová. „Business rules“ sú obs
 | Sekcia | UI komponenty | JS logika | Dáta | Testy |
 |---|---|---|---|---|
 | Shell (rail, drawer, mobile-bar) | `.rail`, `.drawer`, `.mobile-bar`, `.theme-toggle` | téma, drawer open/close, Escape, active nav | `localStorage['founderos-theme']` | Žiadne automatizované |
-| Prehľad | `.timeline`, `.dash-grid`, `.quad-grid`, `.rule-box` | animácia percent dashboardu | percentá v HTML `style="width:…"`, text Snapshot | Žiadne |
-| P1 až P5, Mapa | `.criteria-grid`, `.type-compare`, `.open-list`, `.skill-grid`, … | checklisty (iba `.open-list`) | obsah v HTML; checklisty v `localStorage['strategia-open-questions-v1']` | Žiadne |
+| Prehľad | `.timeline`, `.dash-grid`, `.quad-grid`, `.rule-box` | animácia percent dashboardu | percentá v HTML `style="width:…"`, text mapy | Žiadne |
+| 01 až 10, Ďalší krok | `.criteria-grid`, `.type-compare`, `.timeline`, `.pillars`, … | žiadne checklisty | obsah v HTML | Žiadne |
+| 11 Kde som dnes | `.criteria-grid`, `.open-list` | checklisty (iba `.open-list`) | obsah v HTML; checklisty v `localStorage['strategia-open-questions-v1']` | Žiadne |
 | Globálne | scroll progress, to-top, `.reveal` | scroll listener, IntersectionObserver | žiadne | Žiadne |
 
 ## localStorage kľúče
@@ -72,10 +73,11 @@ Poznámka: názov `strategia-open-questions-v1` je legacy (starší názov proje
 
 ## Checklist `data-key` hodnoty (aktuálne)
 
-**P2:** `p2-rozhodovaci-strom`, `p2-mentalne-pasce`, `p2-fazu4-realne`, `p2-fazu5-realne`, `p2-nazov`, `p2-dokumentacia`  
-**P3:** `p3-nazov`, `p3-schopnost-dodat`, `p3-casova-narocnost`, `p3-cena`, `p3-rozvoj-mesacne`, `p3-hranice-uprav`  
-**P4:** `p4-discovery`, `p4-proces`, `p4-ponuka`, `p4-namietky`, `p4-case`  
-**P5:** `p5-onboarding`, `p5-biznis`, `p5-zakaznik`, `p5-konkurencia`, `p5-checklisty`, `p5-kpi`, `p5-sop`
+Kľúč úložiska ostáva `strategia-open-questions-v1`. Položky mapy (sekcia 11):
+
+`map-rozsah`, `map-v-cene`, `map-varianty`, `map-cenotvorba`, `map-kalkulacia`, `map-onboarding`, `map-komunikacia`, `map-delivery`, `map-30-90`, `map-kpi`, `map-diagnostika`, `map-kvalita-web`, `map-kvalita-ppc`, `map-kvalita-copy`, `map-kvalita-analytika`, `map-case`, `map-predaj`, `map-vlastny-marketing`
+
+Staršie kľúče `p2-*` až `p5-*` v prehliadači môžu ostať; žiadny checkbox ich už nečíta.
 
 ## Ako spustiť lokálne
 

@@ -65,3 +65,5 @@ Preferuj existujúce bloky pred novými:
 - Úzky pevným max-width na `.page`.
 - CSS Grid `auto-fit` pre nepárny počet kariet.
 - Porušenie reduced-motion.
+- Hover `translateY` / `translateX` na kartách v mriežke (prekrýva susedov). Stačí `box-shadow`.
+- Horizontálny `.flow` s `min-width: max-content` (spôsobuje overflow). Flow sa zalamuje, šípy sú skryté.

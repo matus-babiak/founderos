@@ -31,16 +31,23 @@ Celý obsah po slovensky, osobný priamy hlas (Matúšove vlastné rozhodnutia, 
 
 ## Obsahová architektúra
 
-5 pilierov Business OS plus jedna prierezová sekcia:
+Stránka je **mapa podnikania** (Snapshot V1.1), nie 5 starých pilierov. Poradie sekcií kopíruje zdrojový dokument:
 
-1. Filozofia a identita (95 %, hotovo): digitálny partner, hodnota (systém, orientácia, istota), stavy klienta A/B/C, konkurenčná výhoda
-2. Metodika (85 %, rozpracované): Matúšov framework V1, 5 fáz (Pochopenie, Návrh systému, Vybudovanie základov, Učenie a zlepšovanie, Rastové partnerstvo), rozhodovací strom, mentálne pasce, garancie
-3. Produkt (70 %, rozpracované): Základ online systému V1 (účel, pre koho, kedy nie, proces 4 fáz, výstupy, vstupy klienta, hranice). Cena zámerne otvorená: ďalší krok je realita dodania a ekonomika. Pracovné pásmo setup 900 až 1500 €, rozvoj 150 až 300 € / mes.
-4. Predaj (0 %, nezačaté)
-5. Doručenie (5 %, náčrt): systém práce 7 krokov je zadefinovaný ako cieľ, šablóny a SOP chýbajú
-6. Mapa rastu a zlepšenia: silné stránky, 5 medzier, 9 zručnostných oblastí + Top 5 priorít na 6 mesiacov
+1. Prehľad: kde stojím, 7 krokov práce, stav mapy, pravidlo projektu
+2. Kto som: digitálny partner, reťazec biznis → obchod
+3. Filozofia: pochopenie, hypotéza, test, dáta, úprava
+4. Hodnota: systém, orientácia, istota
+5. Komu pomáham: aktívna malá firma, ktorá chce rásť
+6. Problém: chýba jasno, prepojenie a partner (web je symptóm)
+7. Čo klient kupuje: pomoc so systémom, nie izolované nástroje
+8. Produkt: Základ online systému (smer jasný, rozsah ešte nie)
+9. Ako dodávam: 7 fáz; meranie a zlepšovanie sú najslabšie
+10. Čo klient dostane: funkčný základ + partner
+11. Garancie: proces áno, počet zákazníkov nie
+12. Kde som dnes: mám definície / nemám ešte 18 prevádzkových vecí (checklist)
+13. Ďalší krok: jediný otvorený je uzavrieť produkt. Cena, predaj a vlastný marketing čakajú.
 
-Na začiatku je sekcia Prehľad: roadmap 4 fáz budovania, dashboard s percentami, Snapshot V1.0 (kde som dnes), Pravidlo projektu (3 otázky, ktoré musí zodpovedať každý nový dokument: Prečo existuje? Na čom stojí? Čo z nej vyplýva?). Každý pilier má status pill v hlavičke a sekciu „Čo chýba“ ako interaktívny checklist.
+Cena je zámerne neotvorená. Ďalší jediný krok je produkt, nie cenotvorba.
 
 ## Dizajnový systém (`css/style.css`)
 

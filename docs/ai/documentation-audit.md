@@ -19,7 +19,8 @@ Audit k dátumu vzniku AI Knowledge Base. Porovnané s reálnym kódom.
 - Popis čo je Founder OS (osobný Business OS, nie klientský web).
 - Súborová štruktúra 3 súborov aplikácie.
 - Zákaz npm / frameworkov.
-- Obsahová architektúra 5 pilierov + mapa (percentá sedía s HTML).
+- Obsahová architektúra mapy podnikania (nie 5 starých pilierov). Percentá a statusy musia sedieť s HTML.
+- Masthead dátum 13. 8. 2026 (V1.1). Môže zastarať pri ďalších obsahových kolách.
 - Dizajn tokeny a mená komponentov.
 - Interaktivita (téma, drawer, reveal, dashboard, checklisty).
 - Git: push na `main`, live Vercel URL.
@@ -31,7 +32,7 @@ Audit k dátumu vzniku AI Knowledge Base. Porovnané s reálnym kódom.
 |---|---|
 | `strategia-open-questions-v1` | JS storage kľúč stále „strategia“, branding je Founder OS |
 | `.claude/launch.json` názov `strategia-static` | Legacy názov spustenia |
-| Masthead dátum 1. 8. 2026 | Môže zastarať pri ďalších obsahových kolách (nie je to bug, treba vedome aktualizovať) |
+| Masthead dátum 13. 8. 2026 | Môže zastarať pri ďalších obsahových kolách (nie je to bug, treba vedome aktualizovať) |
 
 ## Konfliktné
 
